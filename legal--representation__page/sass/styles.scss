@@ -3,7 +3,6 @@
 .legal-representation__section-wrapper {
   background-color: #f3f3f3;
   font-family: 'Roboto';
-  overflow-x: hidden; // hide horizontal
 }
 
 .legal-representation__container {
@@ -15,13 +14,13 @@
 
 // title start
 
-.legal-representation__main--title {
+.legal-representation__main-title {
   padding-top: 160px;
   font-size: 80px;
   position: relative;
 }
 
-.legal-representation__main--title::after {
+.legal-representation__main-title::after {
   content: '';
   position: absolute;
   left: -15px;
@@ -31,7 +30,7 @@
   background: #cb6942;
 }
 
-.legal-representation__title--second {
+.legal-representation__title-second {
   margin-top: 272px;
   font-size: 80px;
 }
@@ -40,7 +39,7 @@
 
 // paragraph start
 
-.legal-representation__title--description {
+.legal-representation__title-description {
   font-size: 18px;
   margin-top: 57px;
   position: relative;
@@ -74,7 +73,7 @@
   color: #cb6942;
 }
 
-.legal-representation__relative--container {
+.legal-representation__relative-container {
   position: relative;
 }
 
@@ -96,7 +95,7 @@
   background: #cb6942;
 }
 
-.legal-representation__description--second {
+.legal-representation__description-second {
   font-size: 18px;
   margin-top: 114px;
   position: relative;
@@ -106,7 +105,7 @@
   font-size: 18px;
 }
 
-.legal-representation__description--second::before {
+.legal-representation__description-second::before {
   content: '';
   position: absolute;
   left: -15px;
@@ -116,11 +115,11 @@
   background: #cb6942;
 }
 
-.legal-representation__text--bold {
+.legal-representation__text-bold {
   font-weight: 700;
 }
 
-.legal-representation__orange--text {
+.legal-representation__orange-text {
   font-weight: 700;
   color: #cb6942;
 }
@@ -150,7 +149,7 @@
   margin-top: 72px;
   cursor: pointer;
 }
-.legal-representation__button--second {
+.legal-representation__button-second {
   width: 440px;
   height: 72px;
   background-color: #cb6942;
@@ -168,7 +167,7 @@
 
 // description right start
 
-.legal-representation__description--right {
+.legal-representation__description-right {
   margin-top: 411px;
   font-size: 18px;
   padding-right: 280px;
