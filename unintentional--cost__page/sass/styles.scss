@@ -60,6 +60,15 @@ img {
   position: relative;
   max-width: 440px;
 }
+
+.unintentional-cost__learn-more {
+  display: none;
+}
+
+.unintentional-cost__paragraph-show.unintentional-cost__show-more
+  .unintentional-cost__learn-more {
+  display: inline;
+}
 // paragraph box end
 
 // absolute paragraph start
@@ -68,10 +77,16 @@ img {
   margin-right: 15px;
 }
 
+.unintentional-cost__paragraph-plus,
+.unintentional-cost__paragraph-learn {
+  text-decoration: none;
+  color: #cb6942;
+}
+
 .unintentional-cost__absolute {
   color: #cb6942;
   position: absolute;
-  left: 323px;
+  right: 0;
   display: flex;
   align-items: center;
   font-size: 18px;
@@ -81,7 +96,7 @@ img {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 15px;
+  bottom: 2px;
   width: 117px;
   height: 2px;
   background: #cb6942;
