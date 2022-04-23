@@ -3,6 +3,7 @@
 .legal-representation__section-wrapper {
   background-color: #f3f3f3;
   font-family: 'Roboto';
+  overflow-x: hidden; // hide horizontal
 }
 
 .legal-representation__container {
@@ -48,7 +49,7 @@
 .legal-representation__paragraph-absolute {
   color: #cb6942;
   position: absolute;
-  left: 833px;
+  right: 0;
   display: flex;
   font-size: 18px;
 }
@@ -67,19 +68,29 @@
   margin-right: 15px;
 }
 
-.legal-representation__absolute-second {
+.legal-representation__paragraph-plus,
+.legal-representation__paragraph-learn {
+  text-decoration: none;
   color: #cb6942;
+}
+
+.legal-representation__relative--container {
+  position: relative;
+}
+
+.legal-representation__absolute-second {
   position: absolute;
-  left: 1000px;
+  right: 0;
   display: flex;
   align-items: center;
   font-size: 18px;
+  cursor: pointer;
 }
 .legal-representation__absolute-second::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 15px;
+  bottom: 2px;
   width: 117px;
   height: 2px;
   background: #cb6942;
@@ -89,6 +100,10 @@
   font-size: 18px;
   margin-top: 114px;
   position: relative;
+}
+
+.legal-representation__description-decoration {
+  font-size: 18px;
 }
 
 .legal-representation__description--second::before {
@@ -105,9 +120,23 @@
   font-weight: 700;
 }
 
+.legal-representation__orange--text {
+  font-weight: 700;
+  color: #cb6942;
+}
+
+.legal-representation__learn-more {
+  display: none;
+}
+
+.legal-representation__description-learn.legal-representation__show-more
+  .legal-representation__learn-more {
+  display: inline;
+}
+
 // paragraph end
 
-// section first button start
+//  buttons start
 
 .legal-representation__button {
   width: 440px;
@@ -135,7 +164,7 @@
   margin-bottom: 200px;
 }
 
-// section first button end
+// buttons end
 
 // description right start
 
@@ -145,7 +174,7 @@
   padding-right: 280px;
 }
 
-// description left end
+// description right end
 
 // before and after start
 
@@ -175,8 +204,3 @@
 }
 
 // before and after end
-
-.legal-representation__orange--text {
-  font-weight: 700;
-  color: #cb6942;
-}
