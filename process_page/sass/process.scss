@@ -1,6 +1,6 @@
 // section wrapper start
 .process-page__section-wrapper {
-  background-color: #707070;
+  background-color: #414141;
   font-family: 'Roboto';
 }
 
@@ -11,9 +11,44 @@
 
 .process-page__second-part {
   margin-top: 150px;
+  position: relative;
   // margin-right: 260px;
   // margin-left: 250px;
 }
+
+.process-page__second-part::after {
+  content: '';
+  position: absolute;
+  left: 700px;
+  right: 0;
+  margin: 0 auto;
+  top: 2px;
+  width: 710px;
+  height: 4px;
+  background: #cb6942;
+  z-index: 1;
+}
+
+.process-page__second-part::before {
+  content: '';
+  position: absolute;
+  left: 700px;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  width: 80px;
+  height: 8px;
+  background: #cb6942;
+  z-index: 2;
+}
+
+.process-page__section-box {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 // section wrapper end
 
 // title start
@@ -45,7 +80,7 @@
 .process-page__title-second::after {
   content: '';
   position: absolute;
-  left: -8px;
+  left: -55px;
   bottom: -23px;
   width: 144px;
   height: 4px;
@@ -54,51 +89,52 @@
 
 // title end
 
-// box start
-// .process-page__box-wrapper {
-//   display: flex;
-// }
-
-// .process-page__text-wrapper {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
-
-// .process-page__box-number {
-//   font-size: 100px;
-//   color: #cb6942;
-// }
-
-// .process-page__box-img {
-//   margin-top: 150px;
-// }
-
-// .process-page__box-title {
-//   font-size: 30px;
-//   text-align: center;
-// }
-
-.flex {
-  display: flex;
-}
-
-.flex-box {
+.process-page__icon-text {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
 }
 
-.flex-number {
-  font-size: 100px;
-  color: #cb6942;
+.process-page__box-flex {
+  display: flex;
 }
 
-.flex-text {
+.process-page__number-one {
+  width: 65px;
+  height: 108px;
+  margin-bottom: 60px;
+}
+.process-page__number-two {
+  width: 94px;
+  height: 110px;
+  margin-bottom: 60px;
+}
+.process-page__number-three {
+  width: 90px;
+  height: 140px;
+  margin-bottom: 60px;
+}
+
+.process-page__box-text {
   font-size: 32px;
   text-align: center;
   color: #ffffff;
 }
+
+.process-page__info_box {
+  display: flex;
+  align-items: center;
+}
+
+.process-page__box-first,
+.process-page__box-second {
+  margin-right: 150px;
+}
+
+.process-page__svg {
+  margin-top: 160px;
+}
+
 // box end
 
 // button start
@@ -116,6 +152,23 @@
   border: none;
   text-transform: uppercase;
   margin-top: 72px;
+  cursor: pointer;
+}
+
+.process-page__button-second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 440px;
+  height: 72px;
+  background-color: #cb6942;
+  color: #ffffff;
+  padding: 22.3px 104.5px 22.7px 105.5px;
+  font-size: 20px;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 70px;
+  margin-bottom: 117px;
   cursor: pointer;
 }
 
